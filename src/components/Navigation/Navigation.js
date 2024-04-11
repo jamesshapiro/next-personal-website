@@ -31,9 +31,9 @@ function Navigation() {
               />
             )}
 
-            <a href={href} onMouseEnter={() => setHoveredNavItem(slug)}>
+            <Link href={href} onMouseEnter={() => setHoveredNavItem(slug)}>
               {label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
