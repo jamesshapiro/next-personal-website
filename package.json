@@ -5,9 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:upload-to-aws": "aws s3 sync out s3://jamesshapiro.weakerpotions.com",
-    "build:invalidate-cf-cache": "aws cloudfront create-invalidation --distribution-id E11AQ0DP5TY4Q6 --paths '/*'",
-    "postbuild": "npm run build:upload-to-aws && npm run build:invalidate-cf-cache",
     "start": "next start",
     "lint": "next lint"
   },
